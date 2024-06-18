@@ -38,5 +38,7 @@ PE2     ------> SPI4_MOSI
 
 ## 接线图示
 
-![image](https://github.com/liyunyi1936/Stepper-motor-control/blob/master/images/connect1.png)
+![image](https://github.com/liyunyi1936/Air-Pressure-sensor/blob/master/images/ms5611.png)
+
+
 
