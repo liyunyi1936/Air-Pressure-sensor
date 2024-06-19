@@ -8,17 +8,15 @@
 #include "flash_onchip_user.h"
 #include <string.h>
 
-#define ARRAY_NUM(a)  sizeof(a)/sizeof(a[0])
+#define ARRAY_NUM(a)            sizeof(a)/sizeof(a[0])
 #define PARAMETER_BUFFER_SIZE   (1*1024)
 static uint8_t g_buffer[PARAMETER_BUFFER_SIZE] = {0};
 
 
 uint8_t write_param_to_buffer(store_data_structure* data)
 {
-    uint8_t ret;
-    
-    memcpy(g_buffer, data, sizeof(store_data_structure));
-    
+    uint8_t ret;    
+    memcpy(g_buffer, data, sizeof(store_data_structure));   
     return ret;
 }
 
@@ -31,7 +29,6 @@ uint8_t read_param_from_buffer(store_data_structure* data)
 
 void store_buffer()
 {
-    
     buffer_sync(g_buffer, PARAMETER_BUFFER_SIZE);
 }
    

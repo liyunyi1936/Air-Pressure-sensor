@@ -4,7 +4,7 @@
  * \author     :	Danphy
  * \version    :	V1.0
  */
- #include "flash_onchip.h"
+#include "flash_onchip.h"
 
 static uint8_t flash_get_sector(uint32_t addr)
 {

@@ -23,7 +23,7 @@ uint8_t HAL_IIC_ReadMultByteFromSlave(uint8_t dev, uint8_t reg, uint8_t length, 
  
 void MS5611_INIT(void)
 {
-    //		0x1E(30)	Reset command
+    //0x1E(30)	Reset command
     TBuff[0]= MS5611_CMD_RES;
     HAL_I2C_Master_Transmit(&hi2c1,MS5611_WriteAddr,TBuff,1,100);
 
